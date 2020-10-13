@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Conversor de Unidades</string>
+    <string name="app_bytes">Conversion de Bytes</string>
+    <string name="app_metros">Conversion de Metros</string>
+    <string name="app_gramos">Conversion de Gramos</string>
+    <string name="app_litros">Conversion de Litros</string>
+    <string name="app_grados">Conversion de Temperatura</string>
+    <string name="textViewInicio">Seleccione el tipo de conversión:</string>
+    <string name="radioButtonGramos">Gramos</string>
+    <string name="radioButtonLitros">Litros</string>
+    <string name="radioButtonBytes">Bytes</string>
+    <string name="radioButtonMetros">Metros</string>
+    <string name="radioButtonGrados">Grados</string>
+    <string name="buttonAcceder">Acceder</string>
+    <string name="introduzca_la_cantidad_a_convertir">Introduzca la cantidad a convertir:</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="introduzca_las_unidades_origen_y_destino">Introduzca las unidades origen y destino:</string>
+    <string name="de">De:</string>
+    <string name="a">A :</string>
+    <string name="convertir">Convertir</string>
+    <string name="resultado">Resultado</string>
+    <string name="errorOrigen">Debe seleccionar una unidad de origen.</string>
+    <string name="errorDestino">Debe seleccionar una unidad de destino.</string>
+    <string name="errorCantidad">Debe introducir una cantidad a convertir.</string>
+    <string name="volver">Volver</string>
+    <string name="imagenRegla">Imagen de regla</string>
+    <string name="imagenDisco">Imagen de disco</string>
+    <string name="imagenTermometro">Imagen de termometro</string>
+    <string name="imagenBascula">Imagen de bascula</string>
+    <string name="imagenbotella">Imagen de botella</string>
+</resources>

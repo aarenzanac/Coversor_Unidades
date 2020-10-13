@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/activity_main">
+
+    <RadioButton
+        android:id="@+id/radioButtonGramos"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:checked="true"
+        android:text="@string/radioButtonGramos"
+        android:textSize="25sp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonLitros"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:text="@string/radioButtonLitros"
+        android:textSize="25sp"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonBytes"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:text="@string/radioButtonBytes"
+        android:textSize="25sp"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonMetros"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:text="@string/radioButtonMetros"
+        android:textSize="25sp"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonGrados"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:text="@string/radioButtonGrados"
+        android:textSize="25sp"/>
+
+</merge>

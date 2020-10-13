@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents"
+    tools:context=".ConversorMetros">
+
+    <TextView
+        android:id="@+id/textViewCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="@string/introduzca_la_cantidad_a_convertir"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCantidad"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:focusedByDefault="false"
+        android:hint="@string/cantidad"
+        app:boxStrokeColor="@android:color/black"
+        app:hintTextColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCantidad">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cantidad"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewUnidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/introduzca_las_unidades_origen_y_destino"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCantidad"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/textViewUnidadesOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/de"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewUnidades"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUnidades"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/textViewUnidadesDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/a"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUnidades"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Spinner
+        android:id="@+id/spinnerUnidadesOrigen"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/unidadesGrados"
+        android:padding="20dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUnidadesOrigen" />
+
+    <Spinner
+        android:id="@+id/spinnerUnidadesDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/unidadesGrados"
+        android:padding="20dp"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUnidadesDestino"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonConvertir"
+        android:layout_width="167dp"
+        android:layout_height="47dp"
+        android:background="#3F51B5"
+        android:text="@string/convertir"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="167dp"
+        android:layout_height="47dp"
+        android:background="#3F51B5"
+        android:text="@string/volver"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="266dp"
+        android:layout_height="93dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:contentDescription="@string/imagenTermometro"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUnidades"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayoutCantidad"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCantidad"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@drawable/termometro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

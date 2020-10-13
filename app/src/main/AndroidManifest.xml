@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.conversorunidades">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConversorBytes"
+            android:screenOrientation="portrait"
+            android:label="@string/app_bytes">
+        </activity>
+        <activity
+            android:name=".ConversorMetros"
+            android:screenOrientation="portrait"
+            android:label="@string/app_metros">
+        </activity>
+        <activity
+            android:name=".ConversorGramos"
+            android:screenOrientation="portrait"
+            android:label="@string/app_metros">
+        </activity>
+        <activity
+            android:name=".ConversorLitros"
+            android:screenOrientation="portrait"
+            android:label="@string/app_litros">
+        </activity>
+        <activity
+            android:name=".ConversorTemperatura"
+            android:screenOrientation="portrait"
+            android:label="@string/app_grados">
+        </activity>
+    </application>
+
+</manifest>
