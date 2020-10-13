@@ -19,6 +19,8 @@ class ConversorTemperatura : AppCompatActivity() {
         setContentView(R.layout.conversor_temperatura)
         setTitle(R.string.app_grados)
 
+
+
         buttonConvertir.setOnClickListener {
             cantidad = obtenerCantidad()
             if (cantidad != null){
@@ -45,10 +47,14 @@ class ConversorTemperatura : AppCompatActivity() {
 
     private fun obtenerCantidad(): Double{
 
-        val input: Double = textInputCantidad.text.toString().toDouble()
-        println("**************La cantidad introducida es: ${input} *********************")
-        return input
-
+        if(textInputCantidad.text.isNullOrBlank()){
+            textViewResultado.setText(R.string.errorCantidad)
+            return 0.00
+        }else{
+            val input: Double = textInputCantidad.text.toString().toDouble()
+            println("**************La cantidad introducida es: ${input} *********************")
+            return input
+        }
     }
 
     private fun obtenerUnidadOrigen(){
